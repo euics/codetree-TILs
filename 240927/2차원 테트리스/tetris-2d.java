@@ -33,10 +33,38 @@ public class Main {
             processLightYellow();
         }
 
-        System.out.println(score);
-        System.out.println(countBlocks());
+        for(int y = 0; y < 4; y++) {
+            for(int x = 0; x < 6; x++) {
+                System.out.printf("%d ", red[y][x]);
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println();
+
+        for(int y = 0; y < 6; y++) {
+            for(int x = 0; x < 4; x++) {
+                System.out.printf("%d ", yellow[y][x]);
+            }
+            System.out.println();
+        }
+
+        // System.out.println(score);
+        // System.out.println(countBlocks());
     }
 
+/*
+4 8
+
+6
+3 0 0
+3 2 1
+3 0 0
+3 2 1
+3 2 2
+3 2 3
+*/
     public static void init() {
         for(int row = 0; row < 4; row++) {
             red[row][6] = 1;
