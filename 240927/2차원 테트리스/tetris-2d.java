@@ -33,25 +33,25 @@ public class Main {
             processLightYellow();
         }
 
-        for(int y = 0; y < 4; y++) {
-            for(int x = 0; x < 6; x++) {
-                System.out.printf("%d ", red[y][x]);
-            }
-            System.out.println();
-        }
+        // for(int y = 0; y < 4; y++) {
+        //     for(int x = 0; x < 6; x++) {
+        //         System.out.printf("%d ", red[y][x]);
+        //     }
+        //     System.out.println();
+        // }
 
-        System.out.println();
-        System.out.println();
+        // System.out.println();
+        // System.out.println();
 
-        for(int y = 0; y < 6; y++) {
-            for(int x = 0; x < 4; x++) {
-                System.out.printf("%d ", yellow[y][x]);
-            }
-            System.out.println();
-        }
+        // for(int y = 0; y < 6; y++) {
+        //     for(int x = 0; x < 4; x++) {
+        //         System.out.printf("%d ", yellow[y][x]);
+        //     }
+        //     System.out.println();
+        // }
 
-        // System.out.println(score);
-        // System.out.println(countBlocks());
+        System.out.println(score);
+        System.out.println(countBlocks());
     }
 
 /*
@@ -165,6 +165,7 @@ public class Main {
                 }
 
                 dropRed(col);
+                col++;
             }
         }
     }
@@ -201,6 +202,7 @@ public class Main {
                 }
 
                 dropYellow(row);
+                row++;
             }
         }
     }
