@@ -28,17 +28,9 @@ public class Main {
 
             // 2번 사람 이동
             movePerson(n);
-            // for(int i = 0; i < 2 * n; i++) System.out.printf("%d ", movingWalk[i]);
-            // System.out.println();
-            // System.out.println();
 
             // 3번 1번칸 사람 올리기
             insertPerson();
-            // for(int i = 0; i < 2 * n; i++) System.out.printf("%d ", movingWalk[i]);
-            // System.out.println();
-            // System.out.println();
-            // System.out.println();
-            // System.out.println();
 
             answer++;
 
@@ -120,11 +112,3 @@ public class Main {
         return cnt >= k;
     }
 }
-
-/*
-10 12
-4 5 6 2 1 3 1 7 1 7 1 4 2 2 2 9 2 4 10 2 
-
-35
-
-*/
