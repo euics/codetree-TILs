@@ -22,12 +22,23 @@ public class Main {
         while (true) {
             // 1번 무빙워크 한 칸 회전
             rotateMovingWalk(n);
+            // for(int i = 0; i < 2 * n; i++) System.out.printf("%d ", movingWalk[i]);
+            // System.out.println();
+            // System.out.println();
 
             // 2번 사람 이동
             movePerson(n);
+            // for(int i = 0; i < 2 * n; i++) System.out.printf("%d ", movingWalk[i]);
+            // System.out.println();
+            // System.out.println();
 
             // 3번 1번칸 사람 올리기
             insertPerson();
+            // for(int i = 0; i < 2 * n; i++) System.out.printf("%d ", movingWalk[i]);
+            // System.out.println();
+            // System.out.println();
+            // System.out.println();
+            // System.out.println();
 
             answer++;
 
@@ -88,8 +99,8 @@ public class Main {
         /*
          1 2 3 과정 이후 N에 사람이 있을 경우 바로 내리기
         */
-        if(personInfo[n]) {
-            personInfo[n] = false;
+        if(personInfo[n - 1]) {
+            personInfo[n - 1] = false;
         }
     }
 
@@ -109,3 +120,11 @@ public class Main {
         return cnt >= k;
     }
 }
+
+/*
+10 12
+4 5 6 2 1 3 1 7 1 7 1 4 2 2 2 9 2 4 10 2 
+
+35
+
+*/
